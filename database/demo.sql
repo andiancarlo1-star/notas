@@ -1,5 +1,7 @@
 -- Solo para demos locales. Todas las cuentas usan Demo2026!.
 -- Nunca montar este archivo en una instancia pública o de producción.
+SET NAMES utf8mb4;
+
 INSERT IGNORE INTO usuarios (id_usuario, nombre, correo, contrasena, rol) VALUES
 (1, 'Administrador Demo', 'admin@demo.local',    '$2a$10$2WJU3rCb00E8EX0Ro41i0OXevdJFhl5PeWElb5a/ss.JYkEqa0pIS', 'admin'),
 (2, 'Director Demo',      'director@demo.local', '$2a$10$uIHjyXLJqi32MvZghq1ACu2JAOBk5V4qoQ1UH59IfpynxC8Ffj2AK', 'director'),
