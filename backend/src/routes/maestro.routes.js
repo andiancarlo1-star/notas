@@ -45,7 +45,7 @@ router.get("/grados/:gradoId/alumnos", verificarMaestro, async (req, res) => {
     if (perm.length === 0) return res.status(403).json({ msg: "No autorizado" });
 
     const [alumnos] = await pool.query(`
-      SELECT 
+      SELECT
         a.id_alumno,
         a.nombres,
         a.apellidos,
